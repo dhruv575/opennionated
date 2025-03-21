@@ -1,0 +1,498 @@
+/* Article Page - Main styles */
+.article-page {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 70px - 300px);
+}
+
+.article-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Status banner for pending articles */
+.article-status-banner {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.article-status-banner p {
+  margin: 0;
+  color: #856404;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-icon {
+  font-size: 20px;
+}
+
+/* Article header */
+.article-header {
+  margin-bottom: 30px;
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-info a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.author-info a:hover {
+  opacity: 0.8;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-initial {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.article-date {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Add a special class for the "By" prefix that we can hide on mobile */
+.author-prefix {
+  display: inline;
+}
+
+/* Add a special class for the dot separator that we can hide on mobile */
+.date-separator {
+  display: inline;
+  margin: 0 5px;
+}
+
+.article-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.article-status.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.article-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Article image */
+.article-image {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 3:4 aspect ratio (75% = 3/4) */
+}
+
+.article-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Article content */
+.article-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  line-height: 1.7;
+  color: #333;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #222;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+}
+
+.article-content h2 {
+  font-size: 1.75rem;
+}
+
+.article-content h3 {
+  font-size: 1.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1.5em;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-bottom: 1.5em;
+  padding-left: 2em;
+}
+
+.article-content li {
+  margin-bottom: 0.5em;
+}
+
+.article-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #0066cc;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+.article-content code {
+  background-color: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.article-content pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+
+.article-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Article footer */
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.article-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.article-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Loading, Error, Not Found states */
+.article-loading,
+.article-error,
+.article-not-found,
+.article-not-approved {
+  text-align: center;
+  background-color: white;
+  padding: 50px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.article-loading h2,
+.article-error h2,
+.article-not-found h2,
+.article-not-approved h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.article-error p,
+.article-not-found p,
+.article-not-approved p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .article-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .article-content {
+    padding: 30px;
+  }
+  
+  .article-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .article-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-page {
+    padding: 30px 0;
+  }
+  
+  .article-header h1 {
+    font-size: 2rem;
+  }
+  
+  .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .article-status {
+    align-self: flex-start;
+  }
+  
+  .article-content {
+    padding: 25px 20px;
+  }
+  
+  .article-content h1 {
+    font-size: 1.7rem;
+  }
+  
+  .article-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .article-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .article-loading,
+  .article-error,
+  .article-not-found,
+  .article-not-approved {
+    padding: 40px 25px;
+    margin: 30px auto;
+  }
+  
+  .author-name {
+    font-size: 16px;
+  }
+  
+  .article-date {
+    font-size: 12px;
+  }
+  
+  /* Hide the "By" prefix and date separator on mobile */
+  .author-prefix, 
+  .date-separator {
+    display: none;
+  }
+  
+  /* Stack the date below the author name */
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-page {
+    padding: 20px 0;
+  }
+  
+  .article-page .container {
+    padding: 0 15px;
+  }
+  
+  .article-status-banner {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .article-header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+  }
+  
+  .author-info {
+    gap: 10px;
+  }
+  
+  .author-image,
+  .author-initial {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .author-initial {
+    font-size: 20px;
+  }
+  
+  .author-name {
+    font-size: 16px;
+  }
+  
+  .article-date {
+    font-size: 12px;
+  }
+  
+  .article-image {
+    margin-bottom: 20px;
+  }
+  
+  .article-content {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .article-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .article-content h2 {
+    font-size: 1.3rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .article-content p,
+  .article-content ul,
+  .article-content ol {
+    font-size: 0.95rem;
+  }
+  
+  .article-tags {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .article-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+  
+  .article-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .article-loading,
+  .article-error,
+  .article-not-found,
+  .article-not-approved {
+    padding: 30px 15px;
+    margin: 20px auto;
+  }
+  
+  .article-loading h2,
+  .article-error h2,
+  .article-not-found h2,
+  .article-not-approved h2 {
+    font-size: 1.4rem;
+  }
+} 
