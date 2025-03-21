@@ -5,26 +5,94 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Opennionated Team" />
     <meta
       name="description"
-      content="Letting Penn students say what they want to say without jumping through 37 hoops."
+      content="The platform for Penn opinions. Read and share authentic UPenn student perspectives on campus life, academics, events, and university culture. Uncensored and unfiltered Penn voices."
     />
+    <meta name="keywords" content="Penn opinion, UPenn student opinions, University of Pennsylvania, Penn student articles, Penn campus voices, Penn student perspectives, UPenn, penn opinions, upenn opinions, penn student voice" />
+    <meta name="robots" content="index, follow" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <link rel="canonical" href="https://opennionated.com" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Opennionated</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opennionated.com" />
+    <meta property="og:title" content="Opennionated | UPenn Student Opinion Articles" />
+    <meta property="og:description" content="The premier platform for Penn opinions. Read and share authentic UPenn student perspectives on campus life, academics, events, and university culture." />
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta property="og:site_name" content="Opennionated" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://opennionated.com" />
+    <meta name="twitter:title" content="Opennionated | UPenn Student Opinion Articles" />
+    <meta name="twitter:description" content="The premier platform for Penn opinions. Read and share authentic UPenn student perspectives on campus life, academics, events, and university culture." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo512.png" />
+    
+    <!-- Structured Data - Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Opennionated",
+        "url": "https://opennionated.com",
+        "description": "The premier platform for Penn opinions. Read and share authentic UPenn student perspectives on campus life, academics, events, and university culture.",
+        "keywords": "Penn opinion, UPenn student opinions, University of Pennsylvania, Penn student articles, Penn campus voices",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://opennionated.com/articles?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Opennionated",
+        "url": "https://opennionated.com",
+        "logo": "https://opennionated.com/logo512.png",
+        "sameAs": [
+          "https://twitter.com/opennionated",
+          "https://instagram.com/opennionated",
+          "https://facebook.com/opennionated"
+        ]
+      }
+    </script>
+    
+    <!-- Structured Data - Breadcrumbs -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://opennionated.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://opennionated.com/articles"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Join",
+            "item": "https://opennionated.com/join"
+          }
+        ]
+      }
+    </script>
+    
+    <title>Opennionated | UPenn Student Opinion Articles</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
